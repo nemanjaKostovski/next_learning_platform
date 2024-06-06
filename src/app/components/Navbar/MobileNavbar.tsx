@@ -74,7 +74,7 @@ export default function MobileNavbar() {
             height={24}
             alt='sign-out'
             className=''
-          />{' '}
+          />
           <span className='ml-4'>Sign out</span>
         </button>
       </section>

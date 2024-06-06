@@ -3,7 +3,7 @@ import { FooterRowType } from '../../types/index';
 
 export default function FooterRow({ items }: FooterRowType) {
   return (
-    <div className='text-gray-500 text-sm flex'>
+    <div className='text-gray-500 w-full xl:w-fit justify-between text-sm flex flex-col sm:flex-row text-center sm:text-left col-span-1'>
       {items.map((group, groupIndex) => (
         <div
           key={groupIndex}

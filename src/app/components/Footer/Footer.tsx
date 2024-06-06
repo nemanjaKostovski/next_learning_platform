@@ -1,7 +1,7 @@
 import Logo from '../common/Logo';
 import FooterIcons from './FooterIcons';
 import FooterRow from './FooterRow';
-import Image from 'next/image';
+import FooterSubscribe from './FooterSubscribe';
 
 const footerItems = [
   [
@@ -27,35 +27,13 @@ const year = new Date().getFullYear();
 function Footer() {
   return (
     <footer className='pl-[1%] pr-[1%] sm:pl-[10%] sm:pr-[10%] gap-x-8 gap-y-4 pt-10 bg-gray-50'>
-      <div className='xl:flex justify-between border-b-2 lg:grid col-span-2'>
-        <Logo />
+      <div className='xl:flex justify-center xl:justify-between border-b-2 lg:grid'>
+        <div className='hidden w-full xl:w-fit mb-10 sm:flex xl:block justify-center'>
+          <Logo />
+        </div>
         <FooterRow items={footerItems} />
-        <div className='col-span-2 mb-10'>
-          <h2 className='text-2xl font-bold text-indigo-500'>
-            Subscribe to our newsletter
-          </h2>
-          <p className='mb-10'>
-            For product announcements and exclusive insights
-          </p>
-          <div className='relative'>
-            <Image
-              src='/envelope.png'
-              width={16}
-              height={16}
-              alt='email-icon'
-              className='absolute top-3 left-3 w-4 h-4'
-            />
-            <div className='flex'>
-              <input
-                className='w-80 h-10 rounded-lg rounded-r-none border-[1px] border-gray-500 pl-12'
-                type='text'
-                placeholder='Input your email'
-              />
-              <button className='btn btn--primary rounded-lg rounded-l-none w-32'>
-                Subscribe
-              </button>
-            </div>
-          </div>
+        <div className='hidden sm:block'>
+          <FooterSubscribe />
         </div>
       </div>
 
@@ -67,11 +45,19 @@ function Footer() {
         >
           <option value='English'>English</option>
         </select>
+        <div className='block sm:hidden my-10'>
+          <FooterIcons />
+        </div>
+        <div className='block sm:hidden text-center w-5/6'>
+          <FooterSubscribe />
+        </div>
         <p className='text-gray-700 font-medium'>
           &copy; Learn, {year} inc <strong>&middot;</strong> Privacy{' '}
           <strong>&middot;</strong> Terms
         </p>
-        <FooterIcons />
+        <div className='hidden sm:block'>
+          <FooterIcons />
+        </div>
       </div>
     </footer>
   );
