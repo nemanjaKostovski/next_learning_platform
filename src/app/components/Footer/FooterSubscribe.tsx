@@ -16,7 +16,7 @@ export default function Subscribe() {
         />
         <div className="flex">
           <input
-            className="h-10 w-80 rounded-lg rounded-r-none border-[1px] border-gray-500 pl-12"
+            className="h-10 w-48 rounded-lg rounded-r-none border-[1px] border-gray-500 pl-8 sm:w-80"
             type="text"
             placeholder="Input your email"
           />
