@@ -1,26 +1,26 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function FooterIcons() {
   return (
-    <div className='flex justify-between w-40 '>
+    <div className="flex w-40 justify-between">
       <Image
-        className='w-8 h-8'
-        src='/icons8-twitter-50.png'
-        alt='twitter-icon'
+        className="h-8 w-8"
+        src="/icons8-twitter-50.png"
+        alt="twitter-icon"
         width={50}
         height={50}
       />
       <Image
-        className='w-8 h-8'
-        src='/icons8-facebook-50.png'
-        alt='facebook-icon'
+        className="h-8 w-8"
+        src="/icons8-facebook-50.png"
+        alt="facebook-icon"
         width={50}
         height={50}
       />
       <Image
-        className='w-8 h-8'
-        src='/icons8-youtube-50.png'
-        alt='youtube-icon'
+        className="h-8 w-8"
+        src="/icons8-youtube-50.png"
+        alt="youtube-icon"
         width={50}
         height={50}
       />

@@ -16,7 +16,7 @@
 
 /* Custom button styles */
 .btn {
-  @apply text-base text-white font-medium p-2;
+  @apply p-2 text-base font-medium text-white;
 }
 
 .btn--primary {
@@ -28,13 +28,13 @@
 }
 
 .btn--important {
-  @apply bg-red-400 hover:bg-red-500 active:bg-red-500 disabled:bg-red-200 text-gray-400;
+  @apply bg-red-400 text-gray-400 hover:bg-red-500 active:bg-red-500 disabled:bg-red-200;
 }
 
 /* Custom input styles */
 
 .input {
-  @apply bg-gray-400 text-gray-600 focus:bg-white focus:text-black focus:border-purple-600 disabled:text-black;
+  @apply bg-gray-400 text-gray-600 focus:border-purple-600 focus:bg-white focus:text-black disabled:text-black;
 }
 
 .input--error {
