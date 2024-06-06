@@ -1,5 +1,5 @@
 import Footer from '../components/Footer/Footer';
-import Navbar from '../components/common/Navbar';
+import Navbar from '../components/Navbar/Navbar';
 import Hero from '../components/common/Hero';
 import AboutCard from './components/AboutCard';
 

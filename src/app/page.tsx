@@ -1,4 +1,4 @@
-import Navbar from './components/common/Navbar';
+import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Hero from './components/common/Hero';
 import Image from 'next/image';
