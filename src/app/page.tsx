@@ -18,11 +18,11 @@ function App() {
         <Image
           src='/homepage2.png'
           alt='bg-image'
-          className='absolute top-14 h-full'
+          className='absolute z-1 top-14 h-full'
           width={1914}
           height={1080}
         />
-        <div className='flex flex-col justify-center items-center mt-20 mb-20 w-full h-96 absolute '>
+        <div className='flex flex-col justify-center items-center mt-20 mb-20 w-full h-96 absolute z-1'>
           <h2 className=' text-indigo-600 text-4xl'>Join us</h2>
           <p className=' w-1/2 text-center'>
             Qui ut exercitation proident enim non tempor tempor ipsum ex nulla
