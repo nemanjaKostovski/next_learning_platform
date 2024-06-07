@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function AboutCard({ items }: AboutCardType) {
   return (
-    <div className="flex text-center">
+    <div className="flex flex-col text-center sm:flex-row">
       {items.map((item) => (
         <div className="mr-4 flex flex-col" key={item.name}>
           <div className="mb-4 flex items-center justify-center">

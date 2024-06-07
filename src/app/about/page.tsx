@@ -32,13 +32,13 @@ const people = [
 
 function AboutUs() {
   return (
-    <div>
+    <div className="w-full">
       <Navbar />
       <Hero header={hero.header} text={hero.text} imageSrc={hero.imageSrc} />
-      <section className="mb-40 mt-10 flex items-center justify-center">
-        <div>
+      <section className="items center mb-40 mt-10 flex w-full grid-cols-1 flex-col items-center justify-center lg:flex-row">
+        <div className="flex flex-col items-center">
           <h2 className="text-center text-4xl font-bold">Our team</h2>
-          <p className="w-60">
+          <p className="w-60 text-center lg:text-left">
             Aliqua ipsum tempor aliqua eisumod lorem ad labore cupla aliquip
           </p>
         </div>

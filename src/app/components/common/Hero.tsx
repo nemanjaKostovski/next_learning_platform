@@ -7,7 +7,7 @@ function Hero({ header, text, imageSrc }: HeroType) {
       <h1 className="pt-28 text-center text-6xl font-bold">{header}</h1>
 
       <div className="mt-10 flex justify-center">
-        <p className="w-2/5 text-center text-xl">{text}</p>
+        <p className="w-3/4 text-center text-xl sm:w-2/5">{text}</p>
       </div>
       <div className="flex items-center justify-center">
         <Image
