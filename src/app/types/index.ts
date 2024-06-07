@@ -8,9 +8,9 @@ export type FooterRowItemType = {
 };
 
 export type HeroType = {
-  header: string;
-  text: string;
-  imageSrc: string;
+  header?: string;
+  text?: string;
+  imageSrc?: string;
 };
 
 export type AboutCardType = {
@@ -34,4 +34,13 @@ export type BlogCardItemType = {
   desc: string;
   date: string;
   duration: string;
+};
+
+export type FAQType = {
+  items: FAQItemsType[];
+};
+
+export type FAQItemsType = {
+  question: string;
+  answer: string;
 };

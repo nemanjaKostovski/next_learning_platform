@@ -44,3 +44,7 @@
 .input--valid {
   @apply border-green-500 text-green-500;
 }
+
+.padlr {
+  @apply pl-[7.5%] pr-[7.5%];
+}

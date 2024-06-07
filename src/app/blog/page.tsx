@@ -46,7 +46,7 @@ export default function Blog() {
     },
   ];
   return (
-    <section className="mb-20 ml-[12.5%] mr-[12.5%] flex flex-col items-center">
+    <section className="plr mb-20 flex flex-col items-center">
       <h1 className="pb-20 pt-28 text-center text-6xl font-bold">Blog</h1>
       <BlogCard items={blog} />
       <button className="btn btn--primary ml-3 mt-2 h-10 rounded">
