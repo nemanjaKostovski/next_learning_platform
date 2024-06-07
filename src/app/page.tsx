@@ -1,5 +1,3 @@
-import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer/Footer";
 import Hero from "./components/common/Hero";
 import Image from "next/image";
 
@@ -12,7 +10,6 @@ const hero = {
 function App() {
   return (
     <>
-      <Navbar />
       <Hero header={hero.header} text={hero.text} imageSrc={hero.imageSrc} />
       <section className="relative mb-20 ml-[12.5%] mr-[12.5%] h-96 w-3/4">
         <Image
@@ -33,7 +30,6 @@ function App() {
           </button>
         </div>
       </section>
-      <Footer />
     </>
   );
 }

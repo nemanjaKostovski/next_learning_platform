@@ -23,3 +23,15 @@ export type AboutCardItemType = {
   title: string;
   desc: string;
 };
+
+export type BlogCardType = {
+  items: BlogCardItemType[];
+};
+
+export type BlogCardItemType = {
+  imageSrc: string;
+  title: string;
+  desc: string;
+  date: string;
+  duration: string;
+};

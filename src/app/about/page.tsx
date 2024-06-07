@@ -33,7 +33,6 @@ const people = [
 function AboutUs() {
   return (
     <div className="w-full">
-      <Navbar />
       <Hero header={hero.header} text={hero.text} imageSrc={hero.imageSrc} />
       <section className="items center mb-40 mt-10 flex w-full grid-cols-1 flex-col items-center justify-center lg:flex-row">
         <div className="flex flex-col items-center">
