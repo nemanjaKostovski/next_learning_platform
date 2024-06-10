@@ -40,10 +40,10 @@ export default function PricingOptions() {
     ],
   };
   return (
-    <article className="flex h-full w-full flex-col sm:flex-row">
+    <article className="mt-20 flex h-full w-full flex-col sm:flex-row">
       <div
         id="option-1"
-        className="h-[25rem] flex-1 rounded bg-gray-100 p-5 sm:mb-4 sm:mt-4"
+        className="h-[25rem] flex-1 rounded-l-lg bg-gray-100 p-5 sm:mb-4 sm:mt-4"
       >
         <h2 className="mb-1 text-2xl font-bold sm:text-xl lg:text-3xl xl:text-5xl">
           {pricingOption1.title}
@@ -78,7 +78,7 @@ export default function PricingOptions() {
 
       <div
         id="option-2"
-        className="relative h-[27rem] flex-1 basis-4 rounded border p-5"
+        className="relative h-[27rem] flex-1 basis-4 rounded-lg border p-5 shadow-xl"
       >
         <p className="absolute right-4 rounded-full bg-pink-500 p-2 text-white">
           Popular
@@ -110,7 +110,7 @@ export default function PricingOptions() {
 
       <div
         id="option-3"
-        className="h-[25rem] flex-1 rounded bg-gray-100 p-5 sm:mt-4"
+        className="h-[25rem] flex-1 rounded-r-lg bg-gray-100 p-5 sm:mt-4"
       >
         <h2 className="mb-1 text-2xl font-bold sm:text-xl lg:text-3xl xl:text-5xl">
           {pricingOption3.title}

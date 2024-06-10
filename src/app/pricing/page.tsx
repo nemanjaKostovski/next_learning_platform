@@ -20,23 +20,19 @@ export default function Pricing() {
       answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     },
     {
-      question:
-        "Eiusmod id laboris nulla dolor veniam nisi consequat velit est?",
+      question: "Eiusmod id laboris nulla dolor nisi consequat velit est?",
       answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     },
     {
-      question:
-        "Eiusmod id laboris nulla dolor veniam nisi consequat velit est?",
+      question: "Eiusmod id laboris nulla dolor veniam consequat velit est?",
       answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     },
     {
-      question:
-        "Eiusmod id laboris nulla dolor veniam nisi consequat velit est?",
+      question: "Eiusmod id laboris nulla dolor veniam nisi c velit est?",
       answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     },
     {
-      question:
-        "Eiusmod id laboris nulla dolor veniam nisi consequat velit est?",
+      question: "Eiusmod id laboris nulla dolor veniam nisi consequat  est?",
       answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     },
   ];

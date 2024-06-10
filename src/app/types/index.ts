@@ -44,3 +44,7 @@ export type FAQItemsType = {
   question: string;
   answer: string;
 };
+
+export type VisibilityStateType = {
+  [key: string]: boolean;
+};
