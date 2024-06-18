@@ -17,8 +17,8 @@ const footerItems = [
   ],
   [
     { link: "/company", heading: "Company" },
-    { link: "/about-us", heading: "About Us" },
-    { link: "/contact-us", heading: "Contact Us" },
+    { link: "/about", heading: "About Us" },
+    { link: "/contact", heading: "Contact Us" },
   ],
 ];
 
