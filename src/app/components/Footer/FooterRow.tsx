@@ -13,9 +13,7 @@ export default function FooterRow({ items }: FooterRowType) {
             <div key={`${item.link}-${itemIndex}`}>
               {itemIndex === 0 && (
                 <h2 className="mb-6 text-2xl font-bold text-black">
-                  <Link href={item.link}>
-                    {item.heading && <h2>{item.heading}</h2>}
-                  </Link>
+                  {item.heading}
                 </h2>
               )}
               {itemIndex !== 0 && (
