@@ -48,3 +48,12 @@ export type FAQItemsType = {
 export type VisibilityStateType = {
   [key: string]: boolean;
 };
+
+export type InputType = {
+  imageSrc: string;
+  inputType: string;
+  h3: string;
+  placeholder: string;
+  alt: string;
+  children?: any;
+};
