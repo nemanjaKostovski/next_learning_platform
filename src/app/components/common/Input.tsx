@@ -21,7 +21,7 @@ export default function Input({
       {children}
       <h3 className="font-semibold text-slate-700">{h3}</h3>
       <input
-        className="h-10 w-48 rounded-lg border-gray-500 bg-slate-100 pl-8 sm:w-80"
+        className="focus:boxy-shadow h-10 w-48 rounded-lg bg-slate-100 pl-8 focus:bg-white focus:outline sm:w-80"
         type={inputType}
         placeholder={placeholder}
       />
