@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import InputReg from "./inputReg";
 import { InputRegister } from "../.././types/index";
+import { usePathname } from "next/navigation";
 
 export default function Register({
   as,
@@ -14,15 +17,20 @@ export default function Register({
   alt: string;
   inputs: InputRegister[];
 }) {
+  const pathname = usePathname();
+
   return (
-    <div>
-      <h1 className="pt-28 text-center text-6xl font-bold">Registration</h1>
-      <p className="w-[90%] text-xl text-gray-100">{as}</p>
-      <div className="flex flex-row">
-        <div className="flex items-center justify-center md:w-2/5">
+    <div className="mb-40 ml-20 h-full">
+      <div>
+        <h1 className="mb-5 pt-28 text-6xl font-semibold">Registration</h1>
+        <p className="mb-5 w-[90%] text-xl text-gray-400">{as}</p>
+      </div>
+
+      <div className="flex flex-col sm:flex-row">
+        <div className="flex items-center justify-center">
           <Image src={imageSrc} alt={alt} width={451} height={676} />
         </div>
-        <form className="flex flex-col items-center justify-center md:w-3/5">
+        <form className="padlr flex flex-col justify-evenly md:w-7/12">
           {inputs.map((input, index) => (
             <InputReg
               key={index}
@@ -31,7 +39,27 @@ export default function Register({
               h3={input.h3}
             />
           ))}
-          <button className="btn btn--primary ml-3 mt-2 h-10 rounded">
+          {pathname == "/join/trainer" && (
+            <>
+              <h3 className="font-bold text-slate-700">Specialization</h3>
+              <select
+                name="Specialization"
+                id="trainer"
+                className="input text-md"
+              >
+                <option value="" disabled selected hidden>
+                  Please select
+                </option>
+                <option value="System Administrator">
+                  System Administrator
+                </option>
+                <option value="Frontend Developer">Frontend Developer</option>
+                <option value="Fullstack Developer">Fullstack Developer</option>
+                <option value="Backend Developer">Backend Developer</option>
+              </select>
+            </>
+          )}
+          <button className="btn btn--primary mt-10 h-14 rounded">
             Submit
           </button>
         </form>

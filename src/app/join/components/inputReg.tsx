@@ -7,7 +7,7 @@ export default function InputReg({
 }: InputRegister) {
   return (
     <>
-      <h3 className="font-semibold text-slate-700">{h3}</h3>
+      <h3 className="font-bold text-slate-700">{h3}</h3>
       <input
         className="input input-error input-valid"
         type={inputType}
