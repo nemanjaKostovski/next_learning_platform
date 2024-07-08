@@ -57,3 +57,9 @@ export type InputType = {
   alt: string;
   children?: any;
 };
+
+export type InputRegister = {
+  inputType: string;
+  h3: string;
+  placeholder: string;
+};
