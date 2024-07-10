@@ -30,7 +30,7 @@ const studentInputs = [
 export default function Student() {
   return (
     <Register
-      as="Student"
+      role="Student"
       imageSrc="/study.png"
       alt="student"
       inputs={studentInputs}

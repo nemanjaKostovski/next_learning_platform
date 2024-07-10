@@ -46,7 +46,7 @@ export default function Login() {
       <p className="my-7 font-semibold text-slate-500">OR</p>
       <p>
         Don&apos;t have an account?{" "}
-        <Link className="font-semibold text-indigo-600" href={"/register"}>
+        <Link className="font-semibold text-indigo-600" href={"/join"}>
           Sign Up
         </Link>
       </p>

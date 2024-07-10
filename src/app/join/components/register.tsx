@@ -1,18 +1,17 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import InputReg from "./inputReg";
 import { InputRegister } from "../.././types/index";
 import { usePathname } from "next/navigation";
 
 export default function Register({
-  as,
+  role,
   imageSrc,
   alt,
   inputs,
 }: {
-  as: string;
+  role: string;
   imageSrc: string;
   alt: string;
   inputs: InputRegister[];
@@ -20,17 +19,17 @@ export default function Register({
   const pathname = usePathname();
 
   return (
-    <div className="mb-40 ml-20 h-full">
+    <div className="mb-40 h-full sm:ml-10 lg:ml-20">
       <div>
         <h1 className="mb-5 pt-28 text-6xl font-semibold">Registration</h1>
-        <p className="mb-5 w-[90%] text-xl text-gray-400">{as}</p>
+        <p className="mb-5 w-[90%] text-xl text-gray-400">{role}</p>
       </div>
 
       <div className="flex flex-col sm:flex-row">
         <div className="flex items-center justify-center">
           <Image src={imageSrc} alt={alt} width={451} height={676} />
         </div>
-        <form className="padlr flex flex-col justify-evenly md:w-7/12">
+        <form className="padlr mt-4 flex flex-col justify-evenly sm:mt-0 md:w-7/12">
           {inputs.map((input, index) => (
             <InputReg
               key={index}

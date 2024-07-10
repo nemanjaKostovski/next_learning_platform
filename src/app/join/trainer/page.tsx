@@ -20,7 +20,7 @@ const trainerInputs = [
 export default function Trainer() {
   return (
     <Register
-      as="Trainer"
+      role="Trainer"
       imageSrc="/train.png"
       alt="trainer"
       inputs={trainerInputs}
