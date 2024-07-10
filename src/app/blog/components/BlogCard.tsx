@@ -6,7 +6,7 @@ export default function BlogCard({ items }: BlogCardType) {
     <div className="grid grid-cols-1 sm:grid-cols-3 sm:flex-row">
       {items.map((item) => (
         <div
-          className="relative col-span-1 mb-4 mr-4 flex w-80 flex-col rounded-xl border border-indigo-200"
+          className="relative col-span-1 mb-4 mr-4 flex flex-col rounded-xl border border-indigo-200"
           key={item.title}
         >
           <div className="mb-4 flex items-center justify-center">
