@@ -55,11 +55,17 @@ export type InputType = {
   h3: string;
   placeholder: string;
   alt: string;
-  children?: any;
 };
 
 export type InputRegister = {
   inputType: string;
   h3: string;
   placeholder: string;
+};
+
+export type RegisterType = {
+  role: string;
+  imageSrc: string;
+  alt: string;
+  inputs: InputRegister[];
 };

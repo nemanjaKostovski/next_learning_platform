@@ -1,4 +1,4 @@
-import BlogCard from "./components/BlogCard";
+import Box from "../components/common/Box";
 
 export default function Blog() {
   const blog = [
@@ -48,7 +48,7 @@ export default function Blog() {
   return (
     <section className="plr mb-20 flex flex-col items-center">
       <h1 className="pb-20 pt-28 text-center text-6xl font-bold">Blog</h1>
-      <BlogCard items={blog} />
+      <Box items={blog} />
       <button className="btn btn--primary ml-3 mt-2 h-10 rounded">
         Load more articles
       </button>

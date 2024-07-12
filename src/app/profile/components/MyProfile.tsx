@@ -30,7 +30,7 @@ export default function MyProfile() {
   ];
 
   return (
-    <div>
+    <div className="w-1/3">
       <h3 className="mb-4 text-2xl font-bold">My Profile</h3>
       <div className="mb-6 flex flex-row">
         <Image src={"/profpic.png"} width={150} height={150} alt="user" />

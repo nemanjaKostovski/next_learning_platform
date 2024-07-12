@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import InputReg from "./inputReg";
-import { InputRegister } from "../.././types/index";
+import { RegisterType } from "../.././types/index";
 import { usePathname } from "next/navigation";
 
 export default function Register({
@@ -10,12 +10,7 @@ export default function Register({
   imageSrc,
   alt,
   inputs,
-}: {
-  role: string;
-  imageSrc: string;
-  alt: string;
-  inputs: InputRegister[];
-}) {
+}: RegisterType) {
   const pathname = usePathname();
 
   return (
