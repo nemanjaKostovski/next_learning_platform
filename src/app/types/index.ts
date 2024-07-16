@@ -69,3 +69,13 @@ export type RegisterType = {
   alt: string;
   inputs: InputRegister[];
 };
+
+export type TrainersType = {
+  trainers: TrainersRowType[];
+  hidden: boolean;
+};
+
+export type TrainersRowType = {
+  name: string;
+  specialization: string;
+};
